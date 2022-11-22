@@ -27,18 +27,13 @@
     un type booléen : boolean ;
     deux types flottants : float et double.
 
-Les types de base ne définissent pas d’objet. Quand on déclare une variable de type int, la machine Java nous donne en retour une zone mémoire de 4 octets, qui peut contenir un int. L’opérateur d’affectation recopie la valeur de la variable cible dans la variable destination. Prenons un exemple :
-
-  int i, j ;
- i =  0 ;  
- j = i ;   
- i =  1 ;
  
  ## Objet 
+
  Java est langage orienté objet. Cela signifie que (presque) tout est un objet. La définition d’un objet s’appelle une classe. Donc programmer en Java revient à déclarer des classes, à instancier des objets à partir des classes déclarées ou fournies et à effectuer des opérations sur ces objets.
  
 ## Déclarer une classe
- En Java, une classe est déclarée dans son propre fichier qui doit porter le même nom que la classe avec l’extension .java. Il nous faut donc créer le fichier Voiture.java :
+ En Java, une classe est déclarée dans son propre fichier qui doit porter le même nom que la classe avec l’extension .java. Il nous faut donc créer le fichier Personne.java :
 
 
 * Une première classe représentant une personne
