@@ -4,13 +4,13 @@
 
 ## Table des matières
 
-1. [1. Présentation de Java](#java)
-2. [2.Types de base ](#base)
-3. [3.Attributs & méthodes](#att) 
-4. [4.Principe d’encapsulation](#enc)
-5. [5.Héritage et composition](#Heri)
-6. [6.Les classes abstraites](#abs)
-7. [7.Le polymorphisme](#poly)
+[1. Présentation de Java](#java)
+[2.Types de base ](#base)
+[3.Attributs & méthodes](#att) 
+[4.Principe d’encapsulation](#enc)
+[5.Héritage et composition](#Heri)
+[6.Les classes abstraites](#abs)
+[7.Le polymorphisme](#poly)
 
 ### Semaine du 21/11
 
