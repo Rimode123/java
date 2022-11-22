@@ -170,8 +170,6 @@ L’héritage (is-a)
 
 Imaginons que nous voulions développer un simulateur de conduite. Nous pouvons concevoir une classe Voiture 
 
-package fr.epsi.b3.conduite;
-
 public class Voiture {
 
   private final String marque;
@@ -187,8 +185,6 @@ public class Voiture {
 
 Mais nous pouvons également rendre possible la simulation d’une moto. Dans ce cas, nous aurons également besoin d’une classe Moto.
 
-package fr.epsi.b3.conduite;
-
 public class Moto {
 
   private final String marque;
@@ -201,6 +197,7 @@ public class Moto {
   // ...
 
 }
+![héritage](https://gayerie.dev/epsi-b3-java/_images/heritage_vehicule.png)
 
 Pour ce type de relations, nous pouvons utiliser l’héritage pour faire apparaître une classe réprésentant une notion plus générale ou plus abstraite. Dans notre exemple, il pourrait s’agir de la classe Vehicule. Les classes Voiture et Moto peuvent hériter de cette nouvelle classe puiqu’une voiture est un véhicule et une moto est un véhicule.
 
