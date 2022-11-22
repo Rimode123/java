@@ -1,5 +1,8 @@
 # Java
 
+![héritage](https://javaee.goffinet.org/images/kisspng-java-programming-language-programmer-computer-prog-5b234cd2562863.1181341815290400823529.png)
+
+
 ## Journal de java (2022)
 
 ## Table des matières
@@ -192,7 +195,11 @@ public class Moto {
   // ...
 
 }
+
+
 ![héritage](https://gayerie.dev/epsi-b3-java/_images/heritage_vehicule.png)
+
+
 
 Pour ce type de relations, nous pouvons utiliser l’héritage pour faire apparaître une classe réprésentant une notion plus générale ou plus abstraite. Dans notre exemple, il pourrait s’agir de la classe Vehicule. Les classes Voiture et Moto peuvent hériter de cette nouvelle classe puiqu’une voiture est un véhicule et une moto est un véhicule.
 
