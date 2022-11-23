@@ -21,7 +21,8 @@
 
 ## Présentation de programmation Orientée Objet<a name="poo"></a>
 
- ## la programmation orientée objet est un style de programmation qui s’articule autour d’objets renfermant des données et des mécanismes  
+ ## la programmation orientée objet est un style de programmation qui s’articule autour d’objets renfermant des données et des mécanismes 
+
 Avantages :
 
    - Elle traduit un univers complexe en de petits ensembles simples et autonomes (Objets),
@@ -137,6 +138,9 @@ public void setNom(String nom) {
 
  ## Encapsulation <a name="enc"></a>
  
+  il y a 3 concepts au cœur de la POO : l’héritage, le polymorphisme et enfin l’encapsulation
+
+ 
 ## Principe d’encapsulation 
 En quoi consiste l’encapsulation ?
 ![héritage](https://xperti.io/blogs/wp-content/uploads/2021/12/xblog-Encapsulation.png)
@@ -169,6 +173,10 @@ Avec les getters/setters, il est également possible de contrôler si une propri
 ## Astuce
 
 Les getters/setters sont très utilisés en Java mais leur écriture peut être fastidieuse. Les IDE comme Eclipse introduisent un système de génération automatique. Dans Eclipse, faites un clic droit dans votre fichier de classe et choisissez Source > Generate Getters and Setters…
+
+![héritage](https://atika.cohen.web.ulb.be/cours/cours_programmation_cohen/res/poo_pp.jpg)
+
+
 
   ## Héritage et composition <a name="heri"></a>
  
