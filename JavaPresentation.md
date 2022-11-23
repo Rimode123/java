@@ -170,7 +170,7 @@ Avec les getters/setters, il est également possible de contrôler si une propri
 
 Les getters/setters sont très utilisés en Java mais leur écriture peut être fastidieuse. Les IDE comme Eclipse introduisent un système de génération automatique. Dans Eclipse, faites un clic droit dans votre fichier de classe et choisissez Source > Generate Getters and Setters…
 
- ## Héritage et composition <a name="heri"></a>
+  ## Héritage et composition <a name="heri"></a>
  
 ![héritage](https://files.codingninjas.in/article_images/hierarchical-inheritance-in-java-0-1657029335.jpg)
  
