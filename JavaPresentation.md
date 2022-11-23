@@ -172,7 +172,7 @@ Les getters/setters sont très utilisés en Java mais leur écriture peut être 
 
   ## Héritage et composition <a name="heri"></a>
  
-![héritage](https://files.codingninjas.in/article_images/hierarchical-inheritance-in-java-0-1657029335.jpg)
+![héritage](https://miro.medium.com/max/1400/1*_14-yZeofO4AghAKbXiBPw.png)
  
 L’héritage consiste à définir une classe par extension des mécanismes et attributs d’une autre classe. En outre, pour un ensemble d’entités du monde réel donné, cela consiste à regrouper leurs caractéristiques communes dans une classe mère de laquelle seront dérivées les classes (filles) correspondant à ces entités.
 
