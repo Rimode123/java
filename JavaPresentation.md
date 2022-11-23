@@ -1,14 +1,16 @@
-# Java
+![héritage](https://www.tresfacile.net/wp-content/uploads/2018/12/avenir-Java-poo.png)
 
-![héritage](https://javaee.goffinet.org/images/kisspng-java-programming-language-programmer-computer-prog-5b234cd2562863.1181341815290400823529.png)
+# POO ==> la programmation Orientée Objet
+
+![héritage](http://2.bp.blogspot.com/-8w_NJrVnuDg/VGt9_efBXaI/AAAAAAAAAFo/tJi9gWo251U/s1600/cours-programmation-oriente-objet.gif)
 
 
-## Journal de java (2022)
+## Journal de POO en java (2022)
 
 ## Table des matières
 
-1. [1. Présentation de Java](#java)
-2. [2.Types de base ](#base)
+1. [1. Présentation de POO](#poo)
+2. [2.les classes et les objets ](#base)
 3. [3.Attributs & méthodes](#att) 
 4. [4.Principe d’encapsulation](#enc)
 5. [5.Héritage et composition](#Heri)
@@ -17,33 +19,43 @@
 
 ### Semaine du 21/11
 
-## Présentation de Java<a name="java"></a>
+## Présentation de programmation Orientée Objet<a name="poo"></a>
 
-  
-- Java est un langage de programmation à usage général, évolué et orienté objet dont la syntaxe est proche du C. Ses caractéristiques ainsi que la richesse de son écosystème et de sa communauté lui ont permis d'être très largement utilisé pour le développement d'applications de types très disparates. Java est notamment largement utilisé pour le développement d'applications d'entreprises et mobiles .;​
+ ## la programmation orientée objet est un style de programmation qui s’articule autour d’objets renfermant des données et des mécanismes  
+Avantages :
 
-## Types de base  <a name="base"></a>
-- Il existe huit types de base en Java :
+   - Elle traduit un univers complexe en de petits ensembles simples et autonomes (Objets),
+    Elle permet de sécuriser nos données en définissant des règles d’accès et de modification,
+    Elle permet de travailler à plusieurs sur un même projet composé de plusieurs briques.
 
-    des types entier : byte, short, int, long ;
-    un type caractère : char ;
-    un type booléen : boolean ;
-    deux types flottants : float et double.
+![héritage](https://1.bp.blogspot.com/--zuontioJCQ/XW2yWyFb9aI/AAAAAAAAG7U/YM0PLzETG0MFCELkTab-WnTUpXZLnmdUACLcBGAs/s1600/poo.png)
 
- 
- ## Objet 
+## les classes et les objets<a name="base"></a>
 
- Java est langage orienté objet. Cela signifie que (presque) tout est un objet. La définition d’un objet s’appelle une classe. Donc programmer en Java revient à déclarer des classes, à instancier des objets à partir des classes déclarées ou fournies et à effectuer des opérations sur ces objets.
- 
-## Déclarer une classe
- En Java, une classe est déclarée dans son propre fichier qui doit porter le même nom que la classe avec l’extension .java. Il nous faut donc créer le fichier Personne.java :
+## Qu’est-ce qu’une classe en java ?
 
+Une Classe est un ensemble d’attributs et de méthodes (fonctions). En outre elle représente l’ensemble des caractéristiques et des mécanismes d’un concept du monde réel.
+## Que représente un objet en Java ?
 
-* Une première classe représentant une personne
+Un objet est un conteneur qui contient un ensemble de données avec des mécanismes intégrés permettant de les manipuler.
 
-public class Personne {
+## Quelle est la différence (ou relation) entre une classe et un objet ?
 
-}
+Il est important de distinguer la relation et les différences existant entre une classe et un objet :
+
+    -Un objet est une instance d’une classe. Tandis qu’une classe est définie comme étant un « Template » correspondant à un élément du monde réel.
+    
+    -Normalement, on devrait parler d’objet qu’à l’exécution d’un programme.
+    -Un objet est créé grâce au mot clé « new » en utilisant un constructeur, alors qu’une classe est définie avec le mot clé « class ».
+    
+    -Au cours de l’exécution, on peut avoir plusieurs objets instances d’une classe, alors que la classe concernée n’est déclarée qu’une seule fois.
+    
+    -La création d’un objet nécessite l’allocation de mémoire, cependant ce n’est pas le cas pour une classe.
+    
+![héritage](https://qph.cf2.quoracdn.net/main-qimg-34cf1e67f523bb08f457b9abc5d5cb65)
+
+Les classes et les objets sont les composants fondamentaux de la POO.
+
 ## Anatomie d’une classe
 
 En Java une classe est déclarée par le mot-clé class suivi du nom de la classe. On ouvre un bloc avec des accolades pour déclarer le contenu de la classe.
@@ -125,12 +137,16 @@ public void setNom(String nom) {
 
  ## Encapsulation <a name="enc"></a>
  
-## Principe d’encapsulation
-En programmation objet, le principe d’encapsulation nous incite à contrôler et limiter l’accès au contenu de nos classes au strict nécessaire afin de permettre le couplage le plus faible possible. L’encapsulation en Java est permise grâce à la portée private.
+## Principe d’encapsulation 
+En quoi consiste l’encapsulation ?
+![héritage](https://xperti.io/blogs/wp-content/uploads/2021/12/xblog-Encapsulation.png)
 
-On considère que tous les attributs d’une classe doivent être déclarés private afin de satisfaire le principe d’encapsulation.
+on peut dire type de visibilité d'un attribut ou une opération
 
-Cependant, il est parfois utile pour le client d’une classe d’avoir accès à une information qui correspond à un attribut de l’état interne de l’objet. Plutôt que de déclarer cet attribut public, il existe en Java des méthodes dont la signature est facilement identifiable et que l’on nomme getters et setters (les accesseurs). Ces méthodes permettent d’accéder aux propriétés d’un objet ou d’une classe.
+L’encapsulation consiste à définir la visibilité et l’accessibilité des propriétés et méthodes d’une classe pour mieux en maîtriser leur utilisation. Pour cela, il suffit de déclarer « private » les données à encapsuler et de définir des méthodes permettant de les lire et de les modifier : on appelle ces méthodes « getter » (pour la lecture) et « setter » (pour la modification).
+
+Getter : méthode « public » permettant de définir la manière de lecture d’un attribut privé. Son type de retour est celui de la donnée retournée et son nom est souvent composé de « get » et du nom de l’attribut qu’elle retourne.
+Setter : méthode « public » permettant de définir la manière de modification d’une donnée. Souvent, elle ne retourne rien (« void ») et prend un paramètre du même de type que la donnée à modifier. Son nom se compose de la mention « set » et du nom de l’attribut concerné.
 
 getter
 
@@ -155,17 +171,20 @@ Avec les getters/setters, il est également possible de contrôler si une propri
 Les getters/setters sont très utilisés en Java mais leur écriture peut être fastidieuse. Les IDE comme Eclipse introduisent un système de génération automatique. Dans Eclipse, faites un clic droit dans votre fichier de classe et choisissez Source > Generate Getters and Setters…
 
  ## Héritage et composition <a name="heri"></a>
- Une application Java est composée d’un ensemble d’objets. Un des intérêts de la programmation objet réside dans les relations que ces objets entretiennent les uns avec les autres. Ces relations sont construites par les développeurs et constituent ce que l’on appelle l’architecture d’une application. Il existe deux relations fondamentales en programmation objet :
+ 
+![héritage](https://files.codingninjas.in/article_images/hierarchical-inheritance-in-java-0-1657029335.jpg)
+ 
+L’héritage consiste à définir une classe par extension des mécanismes et attributs d’une autre classe. En outre, pour un ensemble d’entités du monde réel donné, cela consiste à regrouper leurs caractéristiques communes dans une classe mère de laquelle seront dérivées les classes (filles) correspondant à ces entités.
 
-est un (is-a)
+A retenir :
 
-    Cette relation permet de créer une chaîne de relation d’identité entre des classes. Elle indique qu’une classe peut être assimilée à une autre classe qui correspond à une notion plus abstraite ou plus générale. On parle d’héritage pour désigner le mécanisme qui permet d’implémenter ce type de relation.
-a un (has-a)
-
-    Cette relation permet de créer une relation de dépendance d’une classe envers une autre. Une classe a besoin des services d’une autre classe pour réaliser sa fonction. On parle également de relation de composition pour désigner ce type de relation.
-
-L’héritage (is-a)
-
+    En Java, il est impossible d’hériter de deux ou plusieurs classes. Si un tel besoin se présente, on pourrait se servir des « interfaces ».
+    L’héritage se fait grâce au mot-clé « extends »,
+    L’appel d’un constructeur de la classe mère depuis une classe fille se fait avec le mot-clé « super ».
+    L’héritage permet d’éviter de répéter un code plusieurs fois et de ne pas modifier un code déjà existant dans une classe de base :
+        Exemple : Class Point à Namedpoint : un point nommé en plus de ses coordonnées et mécanismes intégrés.
+    Il existe en Java des classes non héritables, par exemple, la classe « String ».
+ ## EXEMPLE
 Imaginons que nous voulions développer un simulateur de conduite. Nous pouvons concevoir une classe Voiture 
 
 public class Voiture {
@@ -176,8 +195,6 @@ public class Voiture {
   public Voiture(String marque) {
     this.marque = marque;
   }
-
-  // ...
 
 }
 
@@ -350,6 +367,9 @@ animal = chien;
 animal.crier(); // affiche "Whouaf whouaf !"
 
 L’exemple de code ci-dessus montre que l’implémentation de la méthode crier dépend du type réel de l’objet et non pas du type de la variable qui le référence.
+
+
+![héritage](https://i0.wp.com/tutorial.eyehunts.com//wp-content/uploads/2018/12/Java-polymorphism-example-and-diagram-animal-1024x757.png?resize=1024%2C757&ssl=1)
 
 
 

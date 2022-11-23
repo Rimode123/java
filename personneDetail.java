@@ -15,6 +15,7 @@ String numTel;
 
 public personneDetail(String nom, String prenom, LocalDate dateNaissance, LocalDate insp, List<String> nat,
 		String numTel) {
+	
 	super();
 	this.nom = nom;
 	this.prenom = prenom;
